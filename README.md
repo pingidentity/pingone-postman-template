@@ -1,4 +1,5 @@
-The Postman collections use variables in the request URLs to specify UUIDs for PingOne resources within your organization. If you create a PingOne environment in Postman, and then apply that environment to the collection, you can define common variables once and apply the values to many requests. For more information about setting up Postman environments, see the following topic in the Postman documentation: Environments in Postman.
+## Background on Postman Collections
+The Postman collections use variables in the request URLs to specify UUIDs for PingOne resources within your organization. If you create a PingOne environment in Postman, and then apply that environment to the collection, you can define common variables once and apply the values to many requests. For more information about setting up Postman environments, see the following topic in the Postman documentation: [Environments in Postman](https://learning.postman.com/docs/postman/variables-and-environments/variables/#understanding-variables-and-environments).
 
 For example, a request URL from the users Postman collection that returns data about a specific user contains variables for the environment ID and the user ID:
 
@@ -13,7 +14,7 @@ In addition, every request to PingOne Management API endpoints requires an acces
 For authorization requests, you must define a value for the {{authPath}} variable, which specifies the domain associated with the authorization server. If you are not using a custom domain name, the value should be set to https://auth.pingone.com, https://auth.pingone.eu, and https://auth.pingone.asia, depending on your region. If you have set a custom domain, for example acme.com, and you use auth.acme.com as your authentication server domain, the value of this Postman variable should be set to https://auth.acme.com.
 
 
-To use this file properly:
+## To use this file properly:
 
 1. Download the template.
 
